@@ -60,3 +60,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// Contact form: open a prefilled email in the visitor's email application.
+const contactForm = document.getElementById("contactForm");
+const contactFormStatus = document.getElementById("contactFormStatus");
+const receiverEmail = "hello@kawsarahmed.dev";
+
+if (contactForm) {
+  contactForm.addEventListener("submit", event => {
+    event.preventDefault();
+
+    if (!contactForm.checkValidity()) {
+      contactForm.reportValidity();
+      return;
+    }
+
+    const name = document.getElementById("contactName").value.trim();
+    const email = document.getElementById("contactEmail").value.trim();
+    const subject = document.getElementById("contactSubject").value.trim();
+    const message = document.getElementById("contactMessage").value.trim();
+    const emailSubject = encodeURIComponent(subject || "New Portfolio Contact Message");
+    const emailBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+
+    contactFormStatus.textContent = "Opening your email application...";
+    window.location.href = `mailto:${receiverEmail}?subject=${emailSubject}&body=${emailBody}`;
+  });
+}

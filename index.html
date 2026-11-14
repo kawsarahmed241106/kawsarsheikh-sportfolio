@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#080e14">
   <meta name="description" content="Kawsar Sheikh is a front-end developer building modern, responsive websites and thoughtful digital experiences.">
   <title>Kawsar — Front-End Developer</title>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="Images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
@@ -61,7 +61,7 @@
         <div class="hero-art" aria-label="Portrait of Kawsar Sheikh">
           <div class="art-orbit orbit-a"></div><div class="art-orbit orbit-b"></div>
           <figure class="profile-frame">
-            <img src="profile-cutout-refined.png" alt="Kawsar Sheikh, front-end developer" fetchpriority="high">
+            <img src="Images/profile-cutout-refined.png" alt="Kawsar Sheikh, front-end developer" fetchpriority="high">
           </figure>
         </div>
       </div>
@@ -344,7 +344,55 @@
         <div class="experience-footer"><p>The journey doesn't stop here. <span>There's more to create.</span></p><a href="#projects" class="experience-cta">Explore My Work <span>↗</span></a></div>
       </div>
     </section>
-    <section class="next-section contact-section" id="contact"><span class="section-kicker">HAVE A PROJECT IN MIND?</span><h2>Let’s make it<br>happen.</h2><a class="button button-primary" href="mailto:hello@kawsarahmed.dev?subject=Let's%20discuss%20a%20project">Start a conversation <span>↗</span></a></section>
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <div class="contact-heading">
+          <span class="contact-label">GET IN TOUCH</span>
+          <h2>Let's Work <span>Together.</span></h2>
+          <p>Have a project in mind or just want to say hello? I'd love to hear from you. Let's create something meaningful together.</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-info-heading">
+              <span class="contact-small-label">LET'S CONNECT</span>
+              <h3>Have an idea?<br>Let's make it happen.</h3>
+              <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+            </div>
+            <div class="contact-details">
+              <a href="mailto:hello@kawsarahmed.dev" class="contact-detail">
+                <div class="contact-icon">@</div><div><span>Email me at</span><h4>hello@kawsarahmed.dev</h4></div><span class="contact-arrow">↗</span>
+              </a>
+              <a href="https://wa.me/8801XXXXXXXXX" target="_blank" rel="noopener noreferrer" class="contact-detail">
+                <div class="contact-icon">W</div><div><span>Message me on</span><h4>WhatsApp</h4></div><span class="contact-arrow">↗</span>
+              </a>
+              <div class="contact-detail"><div class="contact-icon">⌖</div><div><span>Based in</span><h4>Bangladesh</h4></div></div>
+            </div>
+            <div class="contact-socials">
+              <span>FOLLOW MY JOURNEY</span>
+              <div class="contact-social-links">
+                <a href="#" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-wrapper">
+            <div class="contact-form-heading"><span class="contact-small-label">SEND A MESSAGE</span><h3>Tell me about your project.</h3></div>
+            <form class="contact-form" id="contactForm">
+              <div class="contact-form-row">
+                <div class="contact-field"><label for="contactName">Your Name</label><input type="text" id="contactName" name="name" placeholder="Enter your name" required></div>
+                <div class="contact-field"><label for="contactEmail">Email Address</label><input type="email" id="contactEmail" name="email" placeholder="Enter your email" required></div>
+              </div>
+              <div class="contact-field"><label for="contactSubject">Subject</label><input type="text" id="contactSubject" name="subject" placeholder="What is this about?" required></div>
+              <div class="contact-field"><label for="contactMessage">Your Message</label><textarea id="contactMessage" name="message" rows="5" placeholder="Tell me a little about your project..." required></textarea></div>
+              <button type="submit" class="contact-submit">Send Message <span>↗</span></button>
+              <p class="contact-form-note" id="contactFormStatus" aria-live="polite">I'll get back to you as soon as possible.</p>
+            </form>
+          </div>
+        </div>
+        <div class="contact-bottom"><span>HAVE A GREAT IDEA?</span><span>LET'S BUILD SOMETHING GREAT. <b>✳</b></span></div>
+      </div>
+    </section>
   </main>
   <footer><span>© 2026 Kawsar Sheikh</span><a href="#top">Back to top ↑</a></footer>
 </body>
